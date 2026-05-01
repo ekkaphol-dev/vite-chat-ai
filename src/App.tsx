@@ -8,8 +8,9 @@ import ModelPicker from './components/ModelPicker'
 import { useRateLimit } from './hooks/useRateLimit'
 import type { ChatCompletionResponse, Message, Theme, WebSource } from './types/chat'
 
-const THAI_LLM_API_PATH = '/api/v1/chat/completions'
-const THAI_LLM_MODELS_API_PATH = '/api/v1/models'
+const API_BASE = import.meta.env.VITE_API_BASE ?? ''
+const THAI_LLM_API_PATH = `${API_BASE}/api/v1/chat/completions`
+const THAI_LLM_MODELS_API_PATH = `${API_BASE}/api/v1/models`
 const DEFAULT_MODEL = 'typhoon-s-thaillm-8b-instruct'
 const DEFAULT_TEMPERATURE = 0.3
 const DEFAULT_MAX_TOKENS = 2048
