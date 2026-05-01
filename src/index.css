@@ -1,0 +1,125 @@
+:root {
+  --text: #3f4754;
+  --text-h: #0d1118;
+  --muted: #6e7686;
+  --bg: #f6efe4;
+
+  --panel-1: rgba(255, 255, 255, 0.86);
+  --panel-2: rgba(245, 248, 255, 0.9);
+  --chat-bg-1: #f8fafc;
+  --chat-bg-2: #f4f7fa;
+  --composer-bg: rgba(255, 255, 255, 0.8);
+  --shell-border: #d4deea;
+  --shell-shadow:
+    rgba(11, 16, 24, 0.14) 0 20px 35px -20px,
+    rgba(11, 16, 24, 0.1) 0 12px 24px -18px;
+
+  --assistant-bg: #ffffff;
+  --assistant-border: #d8e0ec;
+  --assistant-text: #1f2733;
+
+  --user-bg: linear-gradient(150deg, #1d6df2, #4a91ff);
+  --user-border: #2c76f5;
+  --user-text: #f4f8ff;
+
+  --button-bg: #0d4cb9;
+  --button-text: #f7fbff;
+
+  --counter-text: #3d4b61;
+  --counter-bg: rgba(219, 231, 249, 0.65);
+  --counter-border: rgba(61, 93, 141, 0.24);
+
+  --sans: "Plus Jakarta Sans", "Avenir Next", "Segoe UI", sans-serif;
+  --heading: "Outfit", "Trebuchet MS", sans-serif;
+  --mono: "Space Mono", "SFMono-Regular", Menlo, monospace;
+
+  font: 18px/1.45 var(--sans);
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 8% 4%, rgba(120, 164, 255, 0.2), transparent 32%),
+    radial-gradient(
+      circle at 95% 0%,
+      rgba(255, 168, 127, 0.18),
+      transparent 28%
+    ),
+    var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    color 220ms ease,
+    background-color 220ms ease;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+:root[data-theme="dark"] {
+  --text: #d0d8e7;
+  --text-h: #f3f7ff;
+  --muted: #9eacc3;
+  --bg: #121a26;
+
+  --panel-1: rgba(17, 28, 41, 0.88);
+  --panel-2: rgba(10, 20, 31, 0.92);
+  --chat-bg-1: #182433;
+  --chat-bg-2: #152231;
+  --composer-bg: rgba(14, 24, 36, 0.82);
+  --shell-border: #2c3f55;
+  --shell-shadow:
+    rgba(0, 0, 0, 0.45) 0 26px 38px -20px, rgba(0, 0, 0, 0.28) 0 14px 28px -20px;
+
+  --assistant-bg: #1d2d41;
+  --assistant-border: #334b66;
+  --assistant-text: #dce8fa;
+
+  --user-bg: linear-gradient(150deg, #0e5add, #2f79ff);
+  --user-border: #3d82fa;
+  --user-text: #eff5ff;
+
+  --button-bg: #3f88ff;
+  --button-text: #f8fbff;
+
+  --counter-text: #c9daf5;
+  --counter-bg: rgba(54, 83, 117, 0.38);
+  --counter-border: rgba(147, 176, 216, 0.34);
+
+  color: var(--text);
+  background:
+    radial-gradient(circle at 8% 4%, rgba(48, 106, 186, 0.3), transparent 34%),
+    radial-gradient(
+      circle at 95% 0%,
+      rgba(113, 62, 154, 0.26),
+      transparent 30%
+    ),
+    var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    transition: none;
+  }
+}
+
+#root {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  min-height: 100svh;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}
