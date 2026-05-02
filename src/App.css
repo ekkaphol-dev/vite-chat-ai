@@ -378,6 +378,10 @@
     background-color 220ms ease,
     border-color 220ms ease,
     color 220ms ease;
+
+  time {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .bubble-assistant {

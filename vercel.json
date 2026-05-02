@@ -3,14 +3,6 @@
         {
             "source": "/api/:path*",
             "destination": "https://thaillm.or.th/api/:path*"
-        },
-        {
-            "source": "/search-api/:path*",
-            "destination": "https://api.duckduckgo.com/:path*"
-        },
-        {
-            "source": "/search-api",
-            "destination": "https://api.duckduckgo.com/"
         }
     ]
 }
